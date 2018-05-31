@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sign In</title>
+<link rel="stylesheet" type="text/css" href="signin.css">
+
+<script>
+function validateForm() {
+        var un = document.loginform.usr.value;
+        var pw = document.loginform.pword.value;
+        var username = "meg@gmail.com"; 
+        var password = "aa";
+        if ((un == username) && (pw == password)) {
+            return true;
+        }
+        else {
+            alert ("Login was unsuccessful, please check your username and password");
+	    return false;
+		
+        }
+  }
+		
+</script>
+
+</head>
+
+<body background="pics/signin2.jpg" style=" background-position: right top">
+<form class="box_login" name="loginform"  action="auth.php" method="post">
+	<fieldset class="boxBody">
+	  <img src="pics/signin1.png"><br><br>
+	  <label style="color:lightseagreen">Email ID</label><br><br>
+	  <input type="email" placeholder="email" name="user" required><br><br><br><br>
+	  <label style="color:lightseagreen">Password</label><br><br>
+	  <input type="password" placeholder="Password" name="pass" required><br><br><br>
+	  <a href="forgotpassword.html" class="rLink" target="_blank" >Forgot your password?</a><br><br><br><br>
+	
+	  <label><input type="checkbox" >Keep me logged in</label><br><br>
+	  <input style="color:indigo" type="submit" class="btnLogin" name='submit' value="Sign In"><br><br><br>
+	
+</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+<title>CONTACT US</title>
+<style>
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: center;
+	background-size:cover;
+	}
+header
+{
+font-size: 150%;
+color:green;
+}
+#aa
+{
+background-color:black:
+border-radius:50px;
+}
+#div1
+{
+	color:forestgreen;
+	background-color:white;
+	opacity:0.8;
+	border-radius:30px;
+	padding:100px;
+	margin:50px;
+}
+</style>
+<script type="text/javascript">
+
+
+function glad()
+{
+	document.getElementById('gl').innerHTML="We will be glad to hear from you. Waiting for your email!";
+}
+
+count = 1;
+function showImg()
+{
+	img = document.getElementById("myimg");
+	if(img)
+	{
+		img.src = "pics/i.jpg";
+		img.width = 300;
+		img.height = 300;
+	}
+	//setTimeout(animate, 1000);
+	//setInterval(animate,1000);
+	animate();
+	
+}
+
+function animate()
+{
+	img.src = "pics/ime" + count + ".jpg";
+	count++;
+	
+	if(count > 3)
+		count = 0;
+		
+	//enough?
+	//setTimeout(animate, 1000);
+	document.getElementById("div1").onmouseout=function() {glad()};
+	setInterval(animate,1000);
+}
+</script>
+</head>
+<body background="pics/aboutme_back.jpg">
+<center>
+<header><h1>CONTACT US :)</h1></header>
+<div  id="div1" onmouseover="showImg()" onmouseout="glad()" >
+<img id="myimg" src="pics/i.jpg" alt="NO IMAGE YET" onclick="showImg()" width=300px height=300px/>
+<h1 >Scroll Over. Say HI :)</h1>
+
+<h1 id='gl'></h1>
+</div>
+
+<div id="div1">
+<h1>TYPE IN THE FORM</h1>
+<form name="contactform" method="post" action="send_form_email.php">
+ <table width="450px">
+ <tr>  <td valign="top">
+   <label for="first_name">First Name*</label>
+  </td>
+  <td valign="top">
+   <input  type="text" name="first_name" placeholder="Required" maxlength="50" size="30">
+ </td>
+ </tr>
+ <tr>
+  <td valign="top"">
+   <label for="last_name">Last Name*</label>
+ </td>
+  <td valign="top">
+  <input  type="text" name="last_name" placeholder="Required" maxlength="50" size="30">
+ </td></tr>
+<tr>
+ <td valign="top">
+   <label for="email">Email Address*</label>
+  </td>
+  <td valign="top">
+   <input  type="text" name="email" placeholder="Required" maxlength="80" size="30">
+  </td>
+ </tr>
+<tr> <td valign="top">
+  <label for="telephone">Contact Number</label>
+  </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+  </td></tr>
+ <tr><td valign="top">
+   <label for="comments">Comments*</label>
+  </td>
+  <td valign="top">
+ <textarea  name="comments" placeholder="Required. Talk to us" maxlength="1000" cols="25" rows="6"></textarea>
+ </td></tr>
+<tr> <td colspan="2" style="text-align:center">
+  <input type="submit" value="Talk to us">   
+  </td></tr>
+ </table>
+ </form>
+</div>
+</center>
+</body>
+</html>

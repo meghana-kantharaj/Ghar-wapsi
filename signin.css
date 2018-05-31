@@ -1,0 +1,47 @@
+fieldset {
+	background-color:white;
+	opacity:0.9;
+    display: block;
+    color:lightseagreen bold;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-left: auto;
+    padding-right: auto;
+   
+  width: 250px;
+  margin:auto;
+	margin-top:100px;
+	text-align:center;
+	-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+} 
+body
+{
+	background-size:cover;
+
+}
+
+a:link    {color:lightseagreen; background-color:transparent; text-decoration:none}
+a:visited {color:gray; background-color:transparent; text-decoration:none}
+a:hover   {color:indigo; background-color:transparent; text-decoration:none}
+a:active  {color:lightseagreen; background-color:transparent; text-decoration:none}
+
+input[type=email], input[type=password] {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=email]:focus, input[type=password]:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+function ls()
+{
+	var uname=localStorage.getItem("name1");
+	var ucl=localStorage.getItem("color1");
+	var div = document.getElementById( 'locsto' );   
+	if(uname && ucl)
+	{
+    div.style.backgroundColor=ucl;
+	document.getElementById('locsto').innerHTML="Welcome, "+uname+";-P";
+	}
+	else
+	{
+	div.style.backgroundColor=black;
+	document.getElementById('locsto').innerHTML="Welcome, ";
+	}
+	
+	document.getElementById("locsto").style.padding = "20px 20px 20px 20px";
+	document.getElementById("locsto").style.margin = "20px 20px 20px 20px";
+	localStorage.clear();
+}
+
+function bload()
+{
+	setTimeout(ls,3000);
+	b1();
+}
+
+function b1() {
+    document.body.style.backgroundImage = "url('pics/home.jpeg')";
+	setTimeout(b2, 5000);
+}
+
+function b2() {
+    document.body.style.backgroundImage = "url('pics/home3.jpg')";
+	setTimeout(b3, 5000);
+}
+
+function b3() {
+    document.body.style.backgroundImage = "url('pics/home9.jpg')";
+	setTimeout(b4, 5000);
+}
+
+function b4() {
+    document.body.style.backgroundImage = "url('pics/home10.jpg')";
+	setTimeout(b5, 5000);
+}
+function b5() {
+    document.body.style.backgroundImage = "url('pics/home7.jpg')";
+	setTimeout(b6, 5000);
+}
+function b6() {
+    document.body.style.backgroundImage = "url('pics/home13.jpg')";
+	setTimeout(b1, 5000);
+}
+
+ 
+</script>
+<style>
+
+header {
+    background-color:lightseagreen;
+    color:white;
+    text-align:center;
+    padding:50px;
+	margin:10px;
+	line-height:1.3em;
+	border:2px dashed #fff;
+	border-radius:10px;
+	box-shadow: 0 0 0 4px lightseagreen, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    font-size: 150%;
+	border-radius:50px;
+	opacity:1;
+ }
+ 
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: center;
+	background-size:cover;
+	}
+	
+/*
+#mainpg {
+    line-height:50px;
+	cursor: pointer;
+	margin-top:20px;
+	margin-left:70px;
+	margin-right:70px;
+	border-radius:25px;
+    
+    height:50px;
+    width:12%;
+    float:left;
+    padding-left:50px;
+	padding-right:50px;
+	border-style: outset;
+	border-width:1px;
+    text-align:center;	      
+}
+
+#tools{
+	color:indigo;
+	text-align:center;
+	font-colorindigo;
+	}
+
+#signin {
+    line-height:50px;
+    background-color:wheat;
+    height:50px;
+    width:32%;
+    float:left;
+    padding:5px;
+	border-style: outset;
+	border-width:1px;
+    text-align:center;	      
+}
+#contact {
+    line-height:50px;
+    background-color:beige;
+    height:50px;
+    width:33%;
+    float:left;
+    padding:5px;
+	border-style: outset;
+	border-width:1px;
+    text-align:center;	      
+}
+*/
+
+
+#thirdsec 
+{
+	text-align: center;
+	color:indigo;
+	font-size: 500%;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	/*vertical-align:middle;
+	position: absolute;
+    top: 70%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+	*/
+	margin-top:200px
+}
+#thirdsec:hover
+	{
+	color:#FF0066;
+	}
+	
+#third
+	{
+	text-align: center;
+	background:indigo;
+	margin:200px 10px 100px 10px;
+	padding: 100px 100px 100px 100px;
+	font-size: 250%;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	border-radius:50px;
+	color:white;
+	border:2px dashed #fff;
+	box-shadow: 0 0 0 4px indigo, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+	}
+	
+#t2
+	{
+	text-align: center;
+	background:burlywood;
+	margin:200px 300px 10px 300px;
+	padding: 10px 10px 50px 10px;
+	font-size: 150%;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	border-radius:50px;
+	color:white;
+	border:2px dashed #fff;
+	box-shadow: 0 0 0 4px burlywood, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+	}
+	
+#tt
+	{
+	text-align: center;
+	background:coral;
+	margin:200px 300px 10px 300px;
+	padding: 10px 10px 200px 10px;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	border-radius:50px;
+	color:white;
+	border:2px dashed #fff;
+	box-shadow: 0 0 0 4px coral, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+	}
+	
+#col1
+	{
+	vertical-align:top;
+	align:center;
+	}
+
+/*from internet*/
+dl.nav 
+	{
+	width: auto;
+	height: 27px;
+	margin: 0 0 18px;
+	}
+	
+ dl.nav dd 
+	 {
+	float: left;
+	display: inline;
+	}
+
+dl.nav dd a 
+	{
+	background:white;
+	margin: 50px 100px 50px 100px;
+	padding: 10px 50px 10px 50px;
+	text-decoration: none;
+	font-size:150%;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	}
+	
+dl.nav a:hover 
+	{
+	background: #eee;
+	}
+	
+dl.nav dd.active a 
+	{
+	background: #2daebf;
+	color: #fff;
+	}
+	
+#ttl
+	{
+	-webkit-box-reflect: below -5px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.3)));
+	padding:10px;
+	}
+	
+.btn-style
+	{
+	border : solid 0px #a12fa1;
+	border-radius : 11px;
+	moz-border-radius : 11px;
+	-webkit-box-shadow : 0px 0px 13px rgba(92,63,1,1.0);
+	-moz-box-shadow : 0px 0px 13px rgba(92,63,1,1.0);
+	box-shadow : 0px 0px 13px rgba(92,63,1,1.0);
+	font-size : 20px;
+	color : #f5f5f5;
+	padding : 3px 20px;
+	background-color : #7d6140;
+	}
+
+#locsto
+{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	font-size:150%;
+	font-weight:bold;
+	opacity:0.6;
+	border-radius:25px;
+	color:white;
+}
+</style>
+
+<title>Ghar Wapsi</title>
+
+<script>
+/*
+	function ValidateForm() 
+	{
+		if (frm.fname.value == "") {alert('First Name is required.');frm.fname.focus();return false;}
+		if (frm.lname.value == "") {alert('Last Name is required.');frm.lname.focus();return false;}
+		if (frm.bday.value == "") {alert('Birthday is required.');frm.bday.focus();return false;}
+		if (frm.usremail.value == "") {alert('Email address is required.');frm.usremail.focus();return false;}
+		if (frm.Country.value == "") {alert('Country is required.');frm.Country.focus();return false;}
+		if (frm.usremail.value.indexOf("@") < 1 || frm.usremail.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.usremail.focus();return false;}
+		if (frm.StreetAddress1.value == "") {alert('Address is required.');frm.StreetAddress1.focus();return false;}
+		if (frm.City.value == "") {alert('City is required.');frm.City.focus();return false;}
+
+		if (frm.CaptchaCode.value == "") {alert('Enter web form code.');frm.CaptchaCode.focus();return false;}
+		return true; }
+		function ReloadCaptchaImage(captchaImageId) {
+		var obj = document.getElementById(captchaImageId);
+		var src = obj.src;
+		var date = new Date();
+		var pos = src.indexOf('&rad=');
+		if (pos >= 0) { src = src.substr(0, pos); }
+		obj.src = src + '&rad=' + date.getTime();
+		return false; 
+	}
+*/
+
+
+</script>
+</head>
+
+<body onload="bload()">
+<div id="locsto">
+</div>
+<header>
+<h1 style="font-weight: bold;" id='ttl'>Ghar Wapsi</h1>
+</header>
+
+<dl class="nav">
+<dd class="active"><a href="about.html">About</a></dd>
+<dd><a href="signin.html">Sign in</a></dd>
+<dd><a href="contactme.html">Contact us</a></dd>
+</dl>
+
+
+<div id="thirdsec" onmouseover=rightnow() onmouseout=getstarted()>
+Get Started.
+</div>
+
+
+
+<div id="third">
+<ul style="list-style-type:none">
+<li>1. Sign Up</li><br>
+<li>2. Look Up</li><br>
+<li>3. Select</li><br>
+<li>4. Wait ( We do the rest :D )</li><br>
+</ul>
+
+</div>
+<div id="tt">
+<div id="thirdsec">
+OUR TOOLS
+</div>
+<center>
+
+<a href="currency.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  border="0" src="pics/homecoin.png" alt="Currency converter" width="128" height="128"/></a>
+<a href="clock.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="pics/homeclock.png" alt="Time Converter" width="128" height="128"/></a>
+</center>
+</div>
+
+<div id="t2">
+<form  name="frm" action="insert.php" method="post">
+	
+	  <label><h2>Sign Up Now!</h2></label><br><br><br>
+	  
+	  <label >First Name*<br>
+	  <input type="text" placeholder="First Name" name="fname" required></label><br><br>
+	  
+	  <label >Last Name*<br>
+	  <input type="text" placeholder="Last Name" name="lname" required></label><br><br>
+	  
+	  <label>Sex
+	  <input type="radio" name="sex" value="male" checked>Male<br>
+	  <input type="radio" name="sex" value="female">Female
+	  </label><br><br>
+	  
+	  Birthday*<br>
+      <input type="date" name="bday" max="19997-12-31"><br><br>
+  
+	  <label >Email ID*<br>
+	  <input type="email" placeholder="email" name="usremail" required><br><br></label>
+	  
+	  <label >Password*<br>
+	  <input type="password" placeholder="Password" name="pword" required><br><br>
+	  </label>
+	  
+	  <label >Country*<br>
+	  <input type="text" placeholder="country" name="country" required></label><br><br>
+	  
+	  Contact Number<br>
+      <input type="tel" name="usrtel"><br><br>
+	  
+	  <input type="checkbox" name="chk" onClick="apply()" >I am 18 years or older<br><br><br><br>
+	  <input type="submit" name="sub"  class="btn-style" value="Sign Up" disabled><br><br><br>
+	
+
+</form>
+</div>
+<script>
+
+function bigImg(x) {
+    x.style.height = "256px";
+    x.style.width = "256px";
+}
+
+function normalImg(x) {
+    x.style.height = "128px";
+    x.style.width = "128px";
+}
+
+function apply()
+	{
+	document.frm.sub.disabled=true;
+	if(document.frm.chk.checked==true)
+	{
+	document.frm.sub.disabled=false;
+	}
+	if(document.frm.chk.checked==false)
+	{
+	document.frm.sub.enabled=false;
+	}
+	}
+
+function rightnow()
+	{
+	document.getElementById('thirdsec').innerHTML="Right Now!";
+	}
+
+function getstarted()
+	{
+	document.getElementById('thirdsec').innerHTML="Get Started.";
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+<script>
+//var myInput = document.getElementById("n1").value;
+//var col1 = document.getElementById("col").value;
+ 
+function gohome()
+{
+var myInput = document.getElementById("n1").value;
+var col1 = document.getElementById("col").value;
+if (myInput)
+{
+if (typeof(Storage) != "undefined") {
+    localStorage.setItem("name1", myInput);
+	localStorage.setItem("color1", col1);
+	/*alert(myInput +"hiii");
+	alert(col1+"heeeee");
+	alert(localStorage.getItem("name1"));
+	alert(localStorage.getItem("color1"));*/
+}
+}
+}
+
+function gh()
+{
+window.location.href = "home.html";
+}
+
+</script>
+<style>
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: center;
+	background-size:cover;
+	}
+	
+fieldset {
+	background-color:white;
+	opacity:0.8;
+    display: block;
+    color:lightseagreen bold;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-left: auto;
+    padding-right: auto;
+   
+  width: 250px;
+  margin:auto;
+	margin-top:100px;
+	text-align:center;
+	-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+} 
+
+</style>
+<title>HI there</title>
+</head>
+<body background="pics/hithere.jpg">
+
+<form name='hi'>
+<fieldset>
+<h1>Hi There</h1>
+What's your name?<br>
+<input type='text' id="n1" name="n1" autofocus/><br><br>
+Whats your favourite color?<br>
+<input type='color'  id='col' name='col' /><br><br>
+<input type='button' value="submit" onclick="gohome()"/><br><br>
+<input type='button' value='Go to Ghar Wapsi' onclick="gh()"/>
+</fieldset>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+header {
+    background-color:white;
+    color:lightseagreen;
+    text-align:center;
+    padding:50px;
+    font-size: 200%;
+    
+}
+#about {
+    line-height:50px;
+    background-color:#eeeeee;
+    height:50px;
+    width:32%;
+    float:left;
+    padding:5px;
+    text-align:center;	      
+}
+#signin {
+    line-height:50px;
+    background-color:#eeeeee;
+    height:50px;
+    width:32%;
+    float:left;
+    padding:5px;
+    text-align:center;	      
+}
+#contact {
+    line-height:50px;
+    background-color:#eeeeee;
+    height:50px;
+    width:33.5%;
+    float:left;
+    padding:5px;
+    text-align:center;	      
+}
+
+#thirdsec 
+{
+	text-align: center;
+	color:white;
+	font-size: 250%;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	/*vertical-align:middle;*/
+	 position: absolute;
+    	top: 70%;
+    	left: 50%;
+    	height: 30%;
+    	width: 50%;
+    	margin: -15% 0 0 -25%;
+	
+}
+

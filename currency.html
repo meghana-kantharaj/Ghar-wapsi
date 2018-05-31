@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+<style>
+#curconv{
+	background-color:black;
+	opacity:0.8;
+	padding:100px 100px 100px 100px;
+	margin:100px 100px 100px 100px;
+	color:white;
+	text-align:center;
+	font-weight: bold;
+	font-size: 100%;
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	}
+header {
+    background-color:black;
+    color:#ffcc00;
+	margin:0 100px 0 100px;
+    text-align:center;
+    padding:50px;
+    font-size: 200%;
+	
+	
+dl.nav 
+	{
+	width: auto;
+	height: 27px;
+	margin: 0 0 18px;
+	}
+	
+ dl.nav dd 
+	 {
+	float: left;
+	display: inline;
+	}
+
+dl.nav dd a 
+	{
+	background:white;
+	margin: 50px 100px 50px 100px;
+	padding: 10px 50px 10px 50px;
+	text-decoration: none;
+	font-size:150%;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	}
+	
+dl.nav a:hover 
+	{
+	background: #eee;
+	}
+	
+dl.nav dd.active a 
+	{
+	background: #2daebf;
+	color: #fff;
+	}
+</style>
+
+<title>Currency Converter</title>
+<script language="JavaScript">
+<!--
+function rupeeConverter(){
+document.converter.euro.value = document.converter.rupee.value * 0.015
+document.converter.dollar.value = document.converter.rupee.value * 0.016
+document.converter.pound.value = document.converter.rupee.value * 0.011
+document.converter.yen.value = document.converter.rupee.value * 1.93
+}
+function euroConverter(){
+document.converter.rupee.value = document.converter.euro.value * 68.21
+document.converter.dollar.value = document.converter.euro.value * 1.1
+document.converter.pound.value = document.converter.euro.value * 0.74
+document.converter.yen.value = document.converter.euro.value * 130.78
+}
+function dollarConverter(){
+document.converter.rupee.value = document.converter.dollar.value * 62.13
+document.converter.euro.value = document.converter.dollar.value * 0.91
+document.converter.pound.value = document.converter.dollar.value * 0.67
+document.converter.yen.value = document.converter.dollar.value * 119.28
+}
+function poundConverter(){
+document.converter.rupee.value = document.converter.pound.value * 92.60
+document.converter.dollar.value = document.converter.pound.value * 1.49
+document.converter.euro.value = document.converter.pound.value * 1.36
+document.converter.yen.value = document.converter.pound.value * 177.69
+}
+function yenConverter(){
+document.converter.rupee.value = document.converter.yen.value * 0.52
+document.converter.dollar.value = document.converter.yen.value * 0.0084
+document.converter.pound.value = document.converter.yen.value * 0.0056
+document.converter.euro.value = document.converter.yen.value * 0.0076
+}
+//-->
+</script>
+
+</head>
+<body>
+<body background="pics/currency_back.jpg">
+<header style="opacity:0.7">
+<h1>Currency Across Borders</h1>
+</header>
+
+<div id="curconv">
+<form name="converter">
+Indian Rupee:<input type="text" name="rupee" onChange="rupeeConverter()" /><br><br>
+
+Euro: <input type="text" name="euro" onChange="euroConverter()" /><br><br>
+
+US Dollar: <input type="text" name="dollar" onChange="dollarConverter()" /><br><br>
+
+British Pound:<input type="text" name="pound" onChange="poundConverter()" /><br><br>
+
+Japanese Yen: <input type="text" name="yen" onChange="yenConverter()" /><br><br>
+
+<input type="button" value="Convert!" /><br><br>
+</form>
+</div>
+
+
+<div id="curconv">
+<h1>Take a look at the currency notes</h1>
+<dl class="nav">
+<dd class="#"><a href="about.html">Rupee</a></dd>
+<dd><a href="#">Dollar</a></dd>
+<dd><a href="#">Pound</a></dd>
+<dd><a href="#">Euro</a></dd>
+<dd><a href="#">Yen</a></dd>
+
+</dl>
+
+</div>
+</body>
+</html>
